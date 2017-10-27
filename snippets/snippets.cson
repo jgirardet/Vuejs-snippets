@@ -360,10 +360,12 @@
     """
     'description': 'Vuejs instance lifecycle hook for beforeMount'
     'descriptionMoreURL': 'https://vuejs.org/v2/guide/instance.html#Lifecycle-Diagram'
-    
+
   'mounted Vuejs hook':
     'prefix': 'mounted'
     'body': """
     mounted: ->
       $1
     """
+    'description': 'Vuejs instance lifecycle hook for mounted'
+    'descriptionMoreURL': 'https://vuejs.org/v2/guide/instance.html#Lifecycle-Diagram'
