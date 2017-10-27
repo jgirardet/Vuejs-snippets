@@ -369,3 +369,36 @@
     """
     'description': 'Vuejs instance lifecycle hook for mounted'
     'descriptionMoreURL': 'https://vuejs.org/v2/guide/instance.html#Lifecycle-Diagram'
+
+  'beforeUpdate Vuejs hook':
+    'prefix': 'beforeUpdate'
+    'body': """
+    beforeUpdate: ->
+      $1
+    """
+    'description': 'Vuejs instance lifecycle hook for beforeUpdate'
+    'descriptionMoreURL': 'https://vuejs.org/v2/guide/instance.html#Lifecycle-Diagram'
+  'updated Vuejs hook':
+    'prefix': 'updated'
+    'body': """
+    updated: ->
+      $1
+    """
+    'description': 'Vuejs instance lifecycle hook for updated'
+    'descriptionMoreURL': 'https://vuejs.org/v2/guide/instance.html#Lifecycle-Diagram'
+  'beforeDestroy Vuejs hook':
+    'prefix': 'beforeDestroy'
+    'body': """
+    beforeDestroy: ->
+      $1
+    """
+    'description': 'Vuejs instance lifecycle hook for beforeDestroy'
+    'descriptionMoreURL': 'https://vuejs.org/v2/guide/instance.html#Lifecycle-Diagram'
+  'destroyed Vuejs hook':
+    'prefix': 'destroyed'
+    'body': """
+    destroyed: ->
+      $1
+    """
+    'description': 'Vuejs instance lifecycle hook for destroyed'
+    'descriptionMoreURL': 'https://vuejs.org/v2/guide/instance.html#Lifecycle-Diagram'
