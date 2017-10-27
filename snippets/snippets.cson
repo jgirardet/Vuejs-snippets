@@ -1,7 +1,7 @@
 ".text.html.vue":
   "Component include":
     "prefix": "component"
-    "body": "<${1:componentName}>$2</${1:componentName}>"
+    "body": "<${1:componentName}/>"
     "description": "Use a component in a template file"
     "descriptionMoreURL": "https://vuejs.org/v2/guide/components.html"
   "Router View":
