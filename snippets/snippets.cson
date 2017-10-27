@@ -226,24 +226,24 @@
     """
     'description': 'Use it when you want to add child components to parent component.'
     'descriptionMoreURL': 'https://vuejs.org/v2/guide/single-file-components.html'
+
   'Vuejs props':
     'prefix': 'props'
-    'body': 'props: [\'${1:propName}\']'
+    'body': """
+    props: [\'${1:propName}\']
+    """
     'description': 'Vuejs way to pass data to child components'
     'descriptionMoreURL': 'https://vuejs.org/v2/guide/components.html#Props'
+
   'Vuejs props with validation':
     'prefix': 'vprops'
     'body': """
-    props: {
-      \'${1:propName}\': {
-        type: ${2:propType},
-        required: ${3:true},
-        default: function() {
-          return \'${4:propDefault}\';
-        }
-      }
-    }
-    """
+    ${1:propName}:
+      type: ${2:propType}
+      required: ${3:true}
+      default: ->
+        \'${4:propDefault}\'
+      """
     'description': 'Vuejs way to pass data to child components with validation'
     'descriptionMoreURL': 'https://vuejs.org/v2/guide/components.html#Prop-Validation'
 
