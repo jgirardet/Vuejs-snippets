@@ -332,8 +332,23 @@
     'prefix': 'beforeCreate'
     'body': """
     beforeCreate: ->
-      //do something before creating vue instance
       $1
     """
     'description': 'Vuejs instance lifecycle hook for beforeCreate'
     'descriptionMoreURL': 'https://vuejs.org/v2/guide/instance.html#Lifecycle-Diagram'
+
+  'mixin':
+    'prefix': 'mixin'
+    'body': "mixins: [$1]"
+    'description': 'Vuejs mixins to improve component readability and code sharing'
+    'descriptionMoreURL': 'https://vuejs.org/v2/guide/mixins.html'
+
+  'created Vuejs hook':
+    'prefix': 'created'
+    'body': """
+    created: ->
+      $1
+    """
+    'description': 'Vuejs instance lifecycle hook for created'
+    'descriptionMoreURL': 'https://vuejs.org/v2/guide/instance.html#Lifecycle-Diagram'
+    
