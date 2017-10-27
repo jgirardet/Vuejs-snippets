@@ -84,6 +84,10 @@
     'prefix': 'v-bind'
     'body': ':${1:attribute}=\"${2}\"'
 
+######################
+####javascript #######
+######################
+
 '.source.js':
   'Vue computed':
     'prefix': 'vcomputed'
@@ -307,3 +311,29 @@
   'Mutation type':
     'prefix': 'vtype'
     'body': 'export const ${1:MUTATION_TYPE} = \'${1:MUTATION_TYPE}\''
+
+
+######################
+####coffeescript #######
+######################
+
+'.source.coffee':
+  'Vue computed':
+    'prefix': 'vcomputed'
+    'body': """
+    computed:
+      ${1:computedProperty}: ->
+        ${2:something}
+    """
+    'description': 'Vuejs computed property'
+    'descriptionMoreURL': 'https://vuejs.org/v2/guide/computed.html'
+
+  'beforeCreate Vuejs hook':
+    'prefix': 'beforeCreate'
+    'body': """
+    beforeCreate: ->
+      //do something before creating vue instance
+      $1
+    """
+    'description': 'Vuejs instance lifecycle hook for beforeCreate'
+    'descriptionMoreURL': 'https://vuejs.org/v2/guide/instance.html#Lifecycle-Diagram'
