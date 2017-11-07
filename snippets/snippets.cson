@@ -405,59 +405,59 @@
     'description': 'Vuejs instance lifecycle hook for destroyed'
     'descriptionMoreURL': 'https://vuejs.org/v2/guide/instance.html#Lifecycle-Diagram'
 
-    'Vue watch':
-      'prefix': 'vwatch'
-      'body': """
-      watch: ->
-        ${1:propertyToWatch}: ->
-          $2
-      """
-      'description': 'Vuejs way to watch instance properties'
-      'descriptionMoreURL': 'https://vuejs.org/v2/guide/computed.html#Watchers'
-    'Vuejs methods':
-      'prefix': 'methods'
-      'body': """
-      methods:
-        ${1:methodName}: (event) ->
-          $2
-      """
-      'description': 'Vuejs methods event handlers'
-      'descriptionMoreURL': 'https://vuejs.org/v2/guide/events.html#Method-Event-Handlers'
-
-    'Vuejs data':
-      'prefix': 'vdata'
-      'body': """
-      data:  =>
+  'Vue watch':
+    'prefix': 'vwatch'
+    'body': """
+    watch: ->
+      ${1:propertyToWatch}: ->
         $2
-        """
-      'description': 'Vuejs data must be a function'
-      'descriptionMoreURL': 'https://vuejs.org/v2/guide/components.html#data-Must-Be-a-Function'
+    """
+    'description': 'Vuejs way to watch instance properties'
+    'descriptionMoreURL': 'https://vuejs.org/v2/guide/computed.html#Watchers'
+  'Vuejs methods':
+    'prefix': 'methods'
+    'body': """
+    methods:
+      ${1:methodName}: (event) ->
+        $2
+    """
+    'description': 'Vuejs methods event handlers'
+    'descriptionMoreURL': 'https://vuejs.org/v2/guide/events.html#Method-Event-Handlers'
 
-    'Vuejs components include':
-      'prefix': 'components'
-      'body': """
-      components:
-        ${1:componentName}
+  'Vuejs data':
+    'prefix': 'vdata'
+    'body': """
+    data:  =>
+      $2
       """
-      'description': 'Use it when you want to add child components to parent component.'
-      'descriptionMoreURL': 'https://vuejs.org/v2/guide/single-file-components.html'
+    'description': 'Vuejs data must be a function'
+    'descriptionMoreURL': 'https://vuejs.org/v2/guide/components.html#data-Must-Be-a-Function'
 
-    'Vuejs props':
-      'prefix': 'props'
-      'body': 'props: [\'${1:propName}\']'
-      'description': 'Vuejs way to pass data to child components'
-      'descriptionMoreURL': 'https://vuejs.org/v2/guide/components.html#Props'
+  'Vuejs components include':
+    'prefix': 'components'
+    'body': """
+    components:
+      ${1:componentName}
+    """
+    'description': 'Use it when you want to add child components to parent component.'
+    'descriptionMoreURL': 'https://vuejs.org/v2/guide/single-file-components.html'
 
-    'Vuejs props with validation':
-      'prefix': 'vprops'
-      'body': """
-      props:
-        \'${1:propName}\':
-          type: ${2:propType}
-          required: ${3:true}
-          default: ->
-            return \'${4:propDefault}\'
+  'Vuejs props':
+    'prefix': 'props'
+    'body': 'props: [\'${1:propName}\']'
+    'description': 'Vuejs way to pass data to child components'
+    'descriptionMoreURL': 'https://vuejs.org/v2/guide/components.html#Props'
 
-      """
-      'description': 'Vuejs way to pass data to child components with validation'
-      'descriptionMoreURL': 'https://vuejs.org/v2/guide/components.html#Prop-Validation'
+  'Vuejs props with validation':
+    'prefix': 'vprops'
+    'body': """
+    props:
+      \'${1:propName}\':
+        type: ${2:propType}
+        required: ${3:true}
+        default: ->
+          return \'${4:propDefault}\'
+
+    """
+    'description': 'Vuejs way to pass data to child components with validation'
+    'descriptionMoreURL': 'https://vuejs.org/v2/guide/components.html#Prop-Validation'
