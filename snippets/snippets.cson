@@ -386,6 +386,7 @@
     """
     'description': 'Vuejs instance lifecycle hook for updated'
     'descriptionMoreURL': 'https://vuejs.org/v2/guide/instance.html#Lifecycle-Diagram'
+
   'beforeDestroy Vuejs hook':
     'prefix': 'beforeDestroy'
     'body': """
@@ -394,6 +395,7 @@
     """
     'description': 'Vuejs instance lifecycle hook for beforeDestroy'
     'descriptionMoreURL': 'https://vuejs.org/v2/guide/instance.html#Lifecycle-Diagram'
+
   'destroyed Vuejs hook':
     'prefix': 'destroyed'
     'body': """
@@ -402,3 +404,32 @@
     """
     'description': 'Vuejs instance lifecycle hook for destroyed'
     'descriptionMoreURL': 'https://vuejs.org/v2/guide/instance.html#Lifecycle-Diagram'
+
+    'Vue watch':
+      'prefix': 'vwatch'
+      'body': """
+      watch: ->
+        ${1:propertyToWatch}: ->
+          $2
+      """
+      'description': 'Vuejs way to watch instance properties'
+      'descriptionMoreURL': 'https://vuejs.org/v2/guide/computed.html#Watchers'
+    'Vuejs methods':
+      'prefix': 'methods'
+      'body': """
+      methods:
+        ${1:methodName}: (event) ->
+          $2
+      """
+      'description': 'Vuejs methods event handlers'
+      'descriptionMoreURL': 'https://vuejs.org/v2/guide/events.html#Method-Event-Handlers'
+
+    'Vuejs data':
+      'prefix': 'vdata'
+      'body': """
+      data:  =>
+        $2
+        """
+      'description': 'Vuejs data must be a function'
+      'descriptionMoreURL': 'https://vuejs.org/v2/guide/components.html#data-Must-Be-a-Function'
+      
