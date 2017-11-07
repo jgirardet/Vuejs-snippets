@@ -432,4 +432,32 @@
         """
       'description': 'Vuejs data must be a function'
       'descriptionMoreURL': 'https://vuejs.org/v2/guide/components.html#data-Must-Be-a-Function'
-      
+
+    'Vuejs components include':
+      'prefix': 'components'
+      'body': """
+      components:
+        ${1:componentName}
+      """
+      'description': 'Use it when you want to add child components to parent component.'
+      'descriptionMoreURL': 'https://vuejs.org/v2/guide/single-file-components.html'
+
+    'Vuejs props':
+      'prefix': 'props'
+      'body': 'props: [\'${1:propName}\']'
+      'description': 'Vuejs way to pass data to child components'
+      'descriptionMoreURL': 'https://vuejs.org/v2/guide/components.html#Props'
+
+    'Vuejs props with validation':
+      'prefix': 'vprops'
+      'body': """
+      props:
+        \'${1:propName}\':
+          type: ${2:propType}
+          required: ${3:true}
+          default: ->
+            return \'${4:propDefault}\'
+
+      """
+      'description': 'Vuejs way to pass data to child components with validation'
+      'descriptionMoreURL': 'https://vuejs.org/v2/guide/components.html#Prop-Validation'
